@@ -1,7 +1,12 @@
+using Ders1.DataAccess;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AddDbContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 
 var app = builder.Build();
 
