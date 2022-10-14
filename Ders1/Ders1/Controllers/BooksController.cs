@@ -7,6 +7,7 @@ namespace Ders1.Controllers
     public class BooksController : Controller
     {
         private readonly AddDbContext AddDbContext;
+        
         public BooksController(AddDbContext _addDbContext)
         {
             AddDbContext = _addDbContext;

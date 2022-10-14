@@ -1,18 +1,7 @@
-﻿@model IEnumerable<Books>
-
-
+﻿
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @foreach (Books books in Model)
-    {
-        <h1>
-            @books.BooksName
-            @books.author
-            @books.NumberOfPages
-            @books.WriteYear
-        </h1>
-
-    }
+   
 </div>
